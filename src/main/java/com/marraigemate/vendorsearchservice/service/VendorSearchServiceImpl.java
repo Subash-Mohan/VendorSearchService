@@ -22,8 +22,6 @@ public class VendorSearchServiceImpl implements VendorSearchService {
     private VendorRepository vendorRepository;
     @Autowired
     private ObjectMapper objectMapper;
-    @Autowired
-    private MongoTemplate mongoTemplate;
 
     @Override
     public List<VendorDTO> getVendorByIds(List<String> vendorIds) {
